@@ -1,0 +1,726 @@
+/*déclaration polices personnalisées*/
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/robotoblack/Roboto-Black-webfont.eot');
+    src: url('fonts/robotoblack/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotoblack/Roboto-Black-webfont.woff') format('woff'),
+         url('fonts/robotoblack/Roboto-Black-webfont.ttf') format('truetype'),
+         url('fonts/robotoblack/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/robotobold/Roboto-Bold-webfont.eot');
+    src: url('fonts/robotobold/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotobold/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/robotobold/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/robotobold/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/robotoregular/Roboto-Regular-webfont.eot');
+    src: url('fonts/robotoregular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotoregular/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/robotoregular/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/robotoregular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*BLOC PAGE----------------------------------------------------------------------------*/
+#bloc_page{
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/*HEADER-------------------------------------------------------------------------------*/
+
+#header_page{
+	position: fixed;
+	width:100%;
+	left:0;	
+	top:0;
+	background-color:white;
+	z-index: 10;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+
+#header_page img{
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+#menu_principal ul{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#menu_principal li{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#menu_principal li a{
+	text-decoration: none;
+	display: inline-block;	
+	padding-top:20px;
+	font-family: 'robotobold',Arial,serif;
+	color:#636363;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+#menu_principal li a:hover { 
+	border-top:3px solid #5cadd3;
+	line-height: 16px;
+
+}
+
+
+/*SLIDER-----------------------------------------------------------------------------*/
+
+#support{
+	margin-top: 95px;
+	position:relative;
+}
+
+#slider img{
+	width:100%;
+}
+
+#description_principale{
+	position:absolute;
+	bottom:20%;
+	width: 35%;
+	left:15%;
+}
+
+/*INVISIBLE*/
+#description_secondaire{
+	display:none;
+	/*quand visible*/
+	margin-top: 1%;
+	margin-bottom: 3%;
+	background-color: grey;
+	text-align: center;
+	padding:10px;
+	border-radius: 2px;
+}
+
+/*textes et boutons ---------*/
+
+#description_principale h1,#description_principale p, #btn_infos_principal, #description_secondaire p{
+	color:white;
+}
+
+#description_principale h1, #btn_infos_principal, #description_secondaire h1, #btn_infos_secondaire{
+	font-family: 'robotoblack',Arial,serif;
+}
+
+#description_principale p, #description_secondaire p{
+	font-family: 'robotobold',Arial,serif;
+}
+
+#description_principale h1{
+	font-size: 2em;
+}
+
+#description_principale p{
+	font-size: 0.9em;
+}
+
+#description_principale h1 strong, #description_secondaire h1 strong{
+	color:#5cadd3;
+}
+
+#btn_infos_principal{
+	font-size: 1em;
+	padding: 2%;
+	background-color:#5cadd3;
+	border-radius: 2px;
+	margin-top: 5%;
+}
+
+#btn_infos_secondaire{
+	padding: 1%;
+	background-color:#5cadd3;
+	border-radius: 2px;
+	margin-top: 2%;
+	color:white;
+}
+
+#btn_infos_principal:hover{
+	background-color:#7cd2fa;
+}
+
+/*chevrons ----------------*/
+#slider{
+	position: relative;
+}
+
+#chevron_g, #chevron_d{
+	position: absolute;
+	top:40%;
+	color:white;
+	font-size:0.9em;
+    background:rgba(0,0,0,0.4);
+   	padding-top:2%;
+	padding-bottom:2%;
+}
+
+#chevron_g{	
+	border-radius: 0 90px 90px 0;
+	padding-right:1.5%;
+	padding-left: 0.7%;
+}
+
+#chevron_d{
+	right:0;
+	border-radius: 90px 0 0 90px;
+	padding-right:0.7%;
+	padding-left: 1.5%;
+}
+
+#marqueur{
+	position: absolute;
+	bottom: 3px;
+	left:0;
+	right:0;
+	width:10%;
+	border:2px solid #5cadd3;
+}
+
+
+/*SERVICES-----------------------------------------------------------------------------*/
+
+.section header{ /*utilisé aussi par la section projets*/
+	margin-top: 10%;
+	margin-bottom: 4%;
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+
+/*separateur, utilisé aussi par la section projets*/
+.sep{ 
+	position: relative;
+	width: 150px;
+	border-bottom:2px solid #ededed;
+}
+
+.sep i{
+	color:#5cadd3;
+	font-size: 0.8em;
+	position: absolute;
+	left:68px;
+	top:-10px;	
+	border:4px white solid;
+	border-radius: 50%;
+}
+
+/*----*/
+#services{
+	margin-bottom: 4%;
+}
+
+.section h1, #infos_services h2{ 
+	font-family: 'robotobold',Arial,serif;
+}
+
+.section h1{
+	font-size: 2.6em;
+}
+
+#infos_services h2{
+	font-size: 1.2em;
+}
+
+.section header p, .service p{
+	font-family: 'robotoregular',Arial,serif;	
+	color:#636363;
+	line-height: 1.8em;
+}
+
+.section header p{
+	width:55%;
+	text-align: center;
+}
+
+#infos_services{
+	display:flex;
+	justify-content: space-around;
+}
+
+.elt_services{
+	flex:1;
+}
+
+/*côté ecran pc------------*/
+.elt_services:nth-child(1){
+	text-align:center;
+}
+
+#pc{
+	width:80%;
+	height: auto;
+}
+
+/*côté droite infos---------*/
+.elt_services:nth-child(2){
+	margin-top: 3%;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20%;
+}
+
+/*texte et icônes*/
+.service h2{
+	position: relative;
+}
+
+.service p{
+	margin-top: -2%;
+	width:80%;	
+}
+
+.box_icones{
+	position: absolute;
+	top:150%;
+	margin-left: -36px;
+}
+
+.icone{
+	position: absolute;
+	border:2px solid #ededed;
+	padding:10px;
+	border-radius: 50%;
+	text-align: center;
+	color:#468cad;
+	font-size: 1.5em;
+	left:-42px;
+}
+
+.rond{
+	position: absolute;
+	color:#468cad;
+	font-size: 0.7em;
+	border:2px solid white;
+	border-radius: 50%;
+	top:18px;
+}
+
+
+
+/*PROJETS-----------------------------------------------------------------------------*/
+
+#projets{
+	background-color: #f5f5f5;
+	margin-bottom: 8%;
+	padding-bottom: 5%;
+}
+
+/*barre de navigation*/
+#nav_projets{
+	margin-top: -1%;
+}
+
+#nav_projets ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#nav_projets li{
+	position: relative;
+	padding:10px;
+	padding-bottom:6px;
+	background-color: #e5e5e5;
+	border-bottom: 4px #e5e5e5 solid;
+	text-align: center;
+}	
+
+#nav_projets li a{
+	text-decoration: none;
+	color:#636363;
+	font-family: 'robotobold',Arial,serif;
+	font-size: 1em;
+}
+
+#nav_projets li:hover a{
+	color:#468cad;
+}
+
+/*fléche du bas*/
+i.fleche{
+	display: none;
+	position: absolute;
+	bottom:-15px;
+	left:0;
+	font-size:1.2em;
+	left:45%;
+	color:#468cad;
+	z-index: 5;
+}
+
+/*1ère rubrique du menu de PROJETS : "All Works"*/
+#nav_projets ul li:nth-child(1){
+	background-color: #5cadd3;
+	border-bottom: 4px #468cad solid;
+}
+
+#nav_projets li:nth-child(1) i.fleche{
+	display: block;
+}
+
+#nav_projets li:nth-child(1) a{
+	color:white;
+}
+
+
+
+/*PORTFOLIO-----------------------------------------------------------------------------*/
+
+#portfolio{
+	 width: 80%;
+	 margin:auto;
+}
+
+.box {
+	position: relative;
+	padding:20px;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+}
+
+.box img{
+	width:100%;
+}
+
+.description_img{
+	display:none;
+	position: absolute;
+	bottom:24px;
+	left:0;
+  	margin-left:20px;  	
+    padding-left:4%;
+    right:20px;
+	background-color: rgba(0,0,0,0.5);	
+}
+
+.description_img h3, .description_img p {	
+	font-family: 'robotobold',Arial,serif;
+	color:white;
+}
+
+.description_img h3{
+	font-size: 0.9em;
+}
+
+.description_img p{
+	font-size: 0.8em;
+	margin-top:-15px;
+}
+
+.description_img i{
+	font-size: 0.7em;
+	position: absolute;
+	color:white;
+	top:-10px;
+	right:4%;
+	padding:3%;
+	color:white;
+	background-color: #468cad;
+	border:2px white solid;
+	border-radius: 50%;
+}
+
+/*agit sur le <p> lorsque hover sur img de portfolio*/
+.box a:hover > div.description_img {
+	display: block;
+}
+
+
+/*CONTACT-----------------------------------------------------------------------------*/
+#contact{
+	display:flex;
+	justify-content: flex-end;
+	background: url("images/map.jpg") no-repeat;
+  	background-size: cover; 
+	margin-bottom: 40px;
+}
+
+#map{
+	display:none;
+}
+
+#contact form{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 10%;
+	padding-bottom: 1%;
+	display: flex;
+	flex-direction: column;	
+	width:300px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+#contact form h2, #contact form address, #contact input, #contact textarea{
+	margin-bottom:5%;
+	margin-left: 6%;
+	margin-right: 6%;
+
+}
+
+#contact input, #contact textarea{
+	font-family: 'robotobold',Arial,serif;
+	font-size: 0.9em;
+	padding:3%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color:#575757;
+}
+
+
+#contact form h2, input[type="submit"]{
+	font-family: 'robotobold',Arial,serif;
+}
+
+#contact form address{
+	color:#636363;
+	font-style: normal;
+	font-family: 'robotoregular',Arial,serif;
+	font-size: 0.9em;
+	line-height: 1.4;
+	margin-bottom: 6%;
+}
+
+#contact input[type="submit"]{
+	color:white;
+	align-self: flex-start;
+	background-color: #5cadd3;
+	border-bottom: 4px #4494bb solid;
+	border-radius: 5px;	
+}
+
+#contact input[type="submit"]:hover{
+	background-color:#7cd2fa;
+}
+
+
+
+
+/*MEDIA QUERIES-----------------------------------------------------------------------------*/
+
+/*max-width:1000px*/
+@media all and (max-width: 1000px){
+
+	/*SLIDER---------*/
+	/*invisible*/
+	#description_principale{
+		display:none;
+	}
+
+	/*visible*/
+	#description_secondaire{
+		display:block;
+	}
+
+}
+
+/*max-width:792px*/
+@media all and (max-width: 792px){
+
+	/*SERVICES --------------*/
+	#infos_services{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*côté textes et icônes*/
+
+    .service {
+    	align-items: center;
+    	padding-left:0;
+    }
+
+    .service h2{
+    	align-self: flex-start;
+    	margin-left: 45%;
+    }
+
+    .service p{
+		margin-top: 0;
+		width:80%;	
+	}
+
+    .box_icones{
+    	top:0;
+    	margin-top: -20%;
+	}
+
+	.service:nth-child(3) .box_icones{
+		margin-top: -45%;
+	}
+		
+	.icone{
+		font-size: 1.3em;
+		
+	}
+
+	.rond{
+		font-size: 0.5em;
+		top:18px;
+	}	
+
+	/*PROJETS --------------*/
+	/*projets barre de navigation*/
+	#nav_projets ul{
+		padding-right: 38px; 
+	}
+
+}
+
+/*max-width:680px*/
+@media all and (max-width:680px){
+
+	/*HEADER ---------------*/
+	#menu_principal{
+		padding-right: 41px;
+	}
+
+	/*SLIDER*/
+	/*texte de présentation*/
+	#description_secondaire{
+		margin-top: 10%;
+	}
+
+}
+
+/*max-width:550px*/
+@media all and (max-width:550px){
+
+	/*CONTACT --------------*/
+	/*formulaire*/
+	#contact{
+		background-image: none;
+		justify-content: center;
+		flex-wrap:wrap;
+	}
+	#contact form{
+		margin-right: 0;
+		background-color: rgba(142,142,142,0.2);
+	}
+	/*carte*/
+	#map{
+		display: block;
+		margin-top: 10px;
+	}
+	#map img{
+		width:100%;
+	}
+}
+
+/*max-width:460px*/
+@media all and (max-width: 460px){
+
+	/*PROJETS --------------*/
+	/*barre de navigation de Projets*/
+	#nav_projets li{		
+		box-sizing: border-box;
+		width: 50%;		
+	}
+
+}
+
+@media all and (max-width: 420px){
+
+	/*HEADER*/
+	#menu_principal ul{
+		box-sizing: border-box;
+		width: 100%;
+	}
+	#menu_principal ul li{
+		box-sizing: border-box;
+		width: 50%;	
+	}
+
+	#menu_principal li a{	
+		padding-top:10px;
+		padding-bottom: 10px;
+	}
+
+	#menu_principal li a:hover { 
+		border-top:3px solid #5cadd3;
+	}
+
+	/*SLIDER*/
+	/*texte de présentation*/
+	#description_secondaire{
+		margin-top: 25%;
+	}
+
+}
+
+
+/*max-width:360px*/
+@media all and (max-width: 360px){
+
+	/*HEADER --------------*/
+	#logo{
+		width:60%;
+	}
+	#header_page img{
+		width:100%;
+	}
+
+	/*SERVICES et PROJETS --------------*/
+	.section h1{
+		font-size: 2.2em;
+	}	
+
+}
+
+
+
+/*SPECIFIQUE PORTFOLIO*/
+@media all and (max-width:1150px){
+
+	.box {    	
+    	 width: 50%;        
+    }
+
+}
+
+@media all and (max-width:850px){
+
+	.box { 	
+    	 width: 100%;
+    }
+
+}
+
+
