@@ -1,4 +1,4 @@
-# p1
+# Intégration HTML/CSS
 À partir d'une maquette, refonte de la page d'accueil du site d'une agence web uniquement en HTML et CSS. 
 
 ## Spécificités
